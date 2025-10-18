@@ -41,9 +41,12 @@ INSTALLED_APPS = [
     'profileapi',
     'corsheaders'
 ]
-CORS_ALLOW_ALL_ORIGINS = True
 
-
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # React frontend
+    "http://127.0.0.1:3000",
+    "https://profile-api-production-2eac.up.railway.app",
+]
 
 
 MIDDLEWARE = [
